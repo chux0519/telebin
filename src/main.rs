@@ -14,7 +14,6 @@ async fn save_to_db(
     let mut conn = pool.acquire().await?;
     let ts = Utc::now();
 
-    // Insert the task, then obtain the ID of this row
     let id = sqlx::query!(
         r#"
 INSERT INTO telebins (first_name, title, content, ts)
