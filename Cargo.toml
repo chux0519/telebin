@@ -10,4 +10,5 @@ edition = "2018"
 telegram-bot = { git = "https://github.com/telegram-rs/telegram-bot.git", branch = "master" }
 futures = "0.3"
 tokio = { version = "1.2", features = ["macros", "time", "fs", "rt-multi-thread"]}
-sqlx = { version = "0.5", features = [ "sqlite", "runtime-tokio-rustls" ] }
+sqlx = { version = "0.5", features = [ "sqlite", "runtime-tokio-rustls", "chrono" ] }
+anyhow = "1.0"
